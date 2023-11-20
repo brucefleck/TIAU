@@ -30,17 +30,63 @@
             </div>
         </div>
         <div class="feed">
-            <div class="text-post">
-                <p>Publica lo que estas pensando!</p>
+            <div class="post-container" id="post">
+                <h1>Bienvenido</h1>
+                <section id="make_post">
+                    <h2>Escribe tu post</h2>
+                    <form action="/crear_post" method="post" enctype="multipart/form-data">
+                        <label for="titulo">Titulo</label>
+                        <input type="text" name="titulo" id="titulo" required>
+                        <br>
+                        <label for="contenido">Contenido</label>
+                        <textarea name="contenido" id="contenido" cols="30" rows="10" required></textarea>
+                        <br>
+                        <label for="image">Selecciona una imagen:</label>
+                        <input type="file" id="image" name="image" accept="image/*">
+                        <br>
+                        <input type="submit" value="Postear">
+                    </form>
+                </section>
+                <div id = "comentario">
+                    <form action="/crear_comentario" method="post">
+                        <label for="comentario">Comentario</label>
+                        <input type="text" name="comentario" id="comentario" required>
+                        <input type="submit" value="Comentar">
+                    </form>
+                </div>
+            </div>
+            <div class="post">
+                <h2>Cierre de agua</h2>
+                <div class="post-contents">
+                    Estimada comunidad,
+                    <br>
+                    Nos dirigimos a ustedes con un anuncio importante sobre el suministro de agua en nuestra área. Con el objetivo de llevar a cabo mejoras esenciales y garantizar la seguridad y eficiencia de nuestras operaciones mineras, nos vemos en la necesidad de realizar un cierre temporal del suministro de agua en las próximas fechas. Este cierre programado permitirá llevar a cabo las tareas necesarias para mantener y mejorar la infraestructura que abastece de agua a nuestras instalaciones mineras. Entendemos que la interrupción del suministro puede generar inconvenientes, y por ello, hemos planificado cuidadosamente este proceso para minimizar cualquier impacto en la comunidad. - Obelisk
+                </div>
             </div>
-            <div class="make-post">
-                <form action="makepost" method = "post">
-                    <div class="textfield-container">
-                        <img class="mini-pfp" src="..\static\images\Screenshot 2023-10-18 004247.png" alt="pfp">
-                        <input class="make-post-textfield" type="text" placeholder="Escribe algo">
-                    </div>
-                    <input class="post-botton" type="submit" value="Publicar!">
-                </form>
+            <div class="post COMMENT">
+                <div class="post-contents">
+                    No me parece justo que nos dejen sin agua!!
+                </div>
+            </div>
+            <div class="post COMMENT">
+                <div class="post-contents">
+                    Por cuanto tiempo?
+                </div>
+            </div>
+            <div class="post COMMENT">
+                <div class="post-contents">
+                    Me parece correcto
+                </div>
+            </div>
+            <div class="post COMMENT">
+                <div class="post-contents">
+                    Muchas gracias por la informacion!
+                </div>
+            </div>
+            <div class="post COMMENT">
+                <div class="post-contents">
+                    Datos importantes!!1
+                </div>
             </div>
         </div>
     </div>
