@@ -1,0 +1,89 @@
+body {
+    margin: 0px;
+    background-color: #1d1d76 !important;
+    color: whitesmoke !important;
+}
+
+header {
+    width: 100%;
+    background-color: #FFB100;
+    height: 3.5rem;
+}
+
+.logo {
+    margin-left: 1rem;
+}
+.logo img {
+    height: 3rem;
+    width: 5rem;
+}
+
+.banner {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.banner img {
+    height: 25rem;
+    width: 100%;
+}
+
+.pfp-name {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.pfp img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: rgb(17, 28, 28);
+}
+.name {
+    margin-left: 1rem;
+}
+.name p {
+    font-size: 2rem;
+}
+
+.feed {
+    justify-content: center;
+    background-color: #252598;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding: 1rem;
+    border-radius: 5px;
+    
+}
+
+.textfield-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.textfield-container div {
+    width: 100%;
+}
+
+.mini-pfp {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: rgb(17, 28, 28);
+}
+
+.make-post-textfield {
+    margin-left: 0.75rem;
+    height: 2rem;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.post-botton {
+    margin-top: 1.5rem;
+    margin-left: 85%;
+}
