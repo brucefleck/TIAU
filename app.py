@@ -54,9 +54,8 @@ def login():
         usuario = db.Usuarios.find_one({'email': correo})
 
         if usuario and usuario['password'] == contrasenia:
-            # Iniciar sesión del usuario (usando el módulo de sesiones de Flask)
             session['usuario_id'] = str(usuario['_id'])
-            return redirect(url_for('inicio.html'))  # Cambia 'perfil' por la ruta de tu perfil de usuario
+            return redirect(url_for('inicio.html'))
 
     return render_template('inicio.html')
 
@@ -75,13 +74,6 @@ def crear_post():
         })
     return render_template('inicio.html')
 
-#@app.route('/publicacion/<post_id>')
-#def mostrar_publicacion(post_id):
-#        # Obtener la publicación de la base de datos usando el ID
-#        publicacion = db.publicaciones.find_one({'_id': ObjectId(post_id)})
-#
-#        # Renderizar la plantilla HTML y pasar la publicación como argumento
-#        return render_template('inicio.html', publicacion=publicacion)
     
 @app.route('/crear_comentario', methods=['POST'])
 def guardar_comentario():
@@ -95,10 +87,8 @@ def guardar_comentario():
                 'comentario': comentario
             })
 
-            # Redirigir a la página de inicio o a donde desees
             return render_template('inicio.html')
 
-        # Si no se realiza una solicitud POST, redirigir a la página de inicio
         return render_template('inicio.html')
 
 if __name__ == '_main_':
